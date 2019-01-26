@@ -19,5 +19,5 @@ def printer(arr)
   badge << batch_badge_creator(arr)
   room << assign_rooms(arr)
   c = badge[i].zip(room[i])
-  c.join(" ")
+  puts c
 end
