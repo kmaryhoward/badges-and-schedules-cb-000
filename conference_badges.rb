@@ -13,11 +13,9 @@ def assign_rooms(arr)
 end
 
 def printer(arr)
-  i = 0
-  badge =[]
-  room = []
-  badge << batch_badge_creator(arr)
-  room << assign_rooms(arr)
-  c = badge[i].zip(room[i])
-  puts c
+  badge = batch_badge_creator(arr)
+  badge.each { |badge| puts badge }
+  rooms = assign_rooms(arr)
+  rooms.each { |room| puts room }
 end
+
